@@ -26,6 +26,11 @@
       "decimal": 10
     },
     {
+      "asset_id": 200080015,
+      "symbol": "CDOT_8_15",
+      "decimal": 10
+    },
+    {
       "asset_id": 6002,
       "symbol": "LP_DOT_PARA",
       "decimal": 12
@@ -87,7 +92,7 @@
       }
     },
     {
-      "asset_pair": [200060013, 101],
+      "asset_pair": [200060013, 101],     
       "impl": {
         "type": "AMM",
         "interval": 300
@@ -102,6 +107,13 @@
     },
     {
       "asset_pair": [200070014, 101],
+      "impl": {
+        "type": "AMM",
+        "interval": 300
+      }
+    },
+    {
+      "asset_pair": [200080015, 101],
       "impl": {
         "type": "AMM",
         "interval": 300
@@ -175,6 +187,13 @@
       "asset_pair": [200070014, 6688],
       "hops": [
         [200070014, 101],
+        [101, 6688]
+      ]
+    },
+    {
+      "asset_pair": [200080015, 6688],
+      "hops": [
+        [200080015, 101],
         [101, 6688]
       ]
     },
